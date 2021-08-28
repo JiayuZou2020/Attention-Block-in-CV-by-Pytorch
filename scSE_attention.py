@@ -49,7 +49,7 @@ class scSE_attention(nn.Module):
         attention_2 = cSE_attention(channel)(x)
         return attention_1+attention_2
 
-
+# let's give a tensor as an input and see the output of the model.
 if __name__ == '__main__':
     x = torch.randn(1,64,128,128)
     model = scSE_attention(channel=64)
